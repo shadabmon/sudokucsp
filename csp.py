@@ -113,7 +113,7 @@ def revise(csp, Xi, Xj, removals):
 
 
 def first_unassigned_variable(assignment, csp):
-    """The default variable order."""
+
     for var in csp.variables:
         if var not in assignment:
             return var
@@ -121,7 +121,7 @@ def first_unassigned_variable(assignment, csp):
 
 
 def mrv(assignment, csp):
-    """Minimum-remaining-values heuristic."""
+
     vars_to_check = []
     size = []
     for v in csp.variables:
